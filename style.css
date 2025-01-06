@@ -1,4 +1,9 @@
 nav ul li {
   text-align: center;
+}
+
+h1 {
   font-family: "french-clarendon-ornamented", sans-serif;
+  text-transform: uppercase;
+  font-size: 3.25em;
 }
