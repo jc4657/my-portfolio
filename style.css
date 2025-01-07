@@ -3,12 +3,16 @@ h1 {
   text-transform: lowercase;
   font-size: 2.75em;
   display: inline;
-  border-left: 4px solid;
+  border-left: 12px solid lightcoral;
   padding: 0 10px;
-  margin: 10px 50px;
+  margin: 0 50px;
+  color: white;
 }
 
 nav {
-  background-color: lightcoral;
   text-align: center;
+}
+
+body {
+  background-color: 000000db;
 }
