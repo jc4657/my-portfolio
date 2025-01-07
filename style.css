@@ -1,7 +1,14 @@
 h1 {
   font-family: "french-clarendon-ornamented", sans-serif;
-  text-transform: uppercase;
-  font-size: 3.25em;
-  text-align: center;
+  text-transform: lowercase;
+  font-size: 2.75em;
   display: inline;
+  border-left: 4px solid;
+  padding: 0 10px;
+  margin: 10px 50px;
+}
+
+nav {
+  background-color: lightcoral;
+  text-align: center;
 }
