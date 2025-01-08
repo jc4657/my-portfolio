@@ -11,9 +11,7 @@ h1 {
 
 nav {
   text-align: center;
-  border-bottom-style: double;
-  border-color: white;
-  border-width: 10px;
+  border-bottom: 10px double white;
   padding-bottom: 10px;
 }
 
