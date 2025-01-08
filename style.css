@@ -3,9 +3,6 @@ h1 {
   text-transform: lowercase;
   font-size: 2.75em;
   display: inline;
-  border-left: 12px solid lightcoral;
-  padding: 0 10px;
-  margin: 0 50px;
   color: white;
 }
 
@@ -13,6 +10,12 @@ nav {
   text-align: center;
   border-bottom: 10px double white;
   padding-bottom: 10px;
+}
+
+nav h1 {
+  border-left: 12px solid lightcoral;
+  padding: 0 10px;
+  margin: 0 50px;
 }
 
 body {
