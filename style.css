@@ -1,5 +1,4 @@
 h1 {
-  font-family: "french-clarendon-ornamented", sans-serif;
   text-transform: lowercase;
   font-size: 30px;
   display: inline;
@@ -28,10 +27,16 @@ nav ul li a {
   float: right;
 }
 
+nav ul li a:hover {
+  color: lightcoral;
+}
+
 body {
   background-color: #272727;
   color: white;
   margin-top: 90px;
+  font-family: "garamond", serif;
+  
 }
 
 section {
@@ -42,6 +47,7 @@ section {
 
 section h1 {
   border-bottom: 10px solid lightcoral;
+  font-size: 30px;
 }
 
 ul {
@@ -53,8 +59,25 @@ ul {
 nav ul li {
   display: inline;
   font-size: 30px;
-  font-family: "Roboto", serif;
   color: lightcoral;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.card {
+  background-color: lightcoral;
+  color: white;
+  width: 33%;
+  margin: 30px;
+  display: inline-flex;
+}
+
+img {
+  max-width: 90%;
+  height: auto;
+  border: 10px solid white;
 }
