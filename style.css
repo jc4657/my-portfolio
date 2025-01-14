@@ -34,7 +34,7 @@ nav ul li a:hover {
 body {
   background-color: #272727;
   color: white;
-  margin-top: 90px;
+  margin: 90px 0 0;
   font-family: "garamond", serif;
   
 }
@@ -73,11 +73,30 @@ h2 {
   color: white;
   width: 33%;
   margin: 30px;
-  display: inline-flex;
+  display: inline-block;
 }
 
 img {
   max-width: 90%;
   height: auto;
   border: 10px solid white;
+}
+
+.tag {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.tag li {
+  display: inline;
+  background-color: white;
+  color: lightcoral;
+  padding: 7px;
+}
+
+.footer {
+  background-color: lightcoral;
+  padding: 10px 0 50px;
+  text-align: center;
+  margin: 0;
 }
