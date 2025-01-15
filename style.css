@@ -36,18 +36,23 @@ body {
   color: white;
   margin: 90px 0 0;
   font-family: "garamond", serif;
-  
 }
 
 section {
+  display: flex;
   text-align: center;
   margin: 20px;
   scroll-margin-top: 90px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 section h1 {
   border-bottom: 10px solid lightcoral;
   font-size: 30px;
+  width: fit-content;
+  margin: 0 0 10px;
 }
 
 ul {
@@ -66,14 +71,14 @@ nav ul li {
 
 h2 {
   font-size: 25px;
+  margin: 10px 0;
 }
 
 .card {
   background-color: lightcoral;
   color: white;
   width: 33%;
-  margin: 30px;
-  display: inline-block;
+  margin-right: 3%;
 }
 
 img {
@@ -96,7 +101,29 @@ img {
 
 .footer {
   background-color: lightcoral;
-  padding: 10px 0 50px;
-  text-align: center;
-  margin: 0;
+  padding: 20px 10px 10px;
+  text-align: right;
+}
+
+a.fa-4x {
+  margin: 0 20px 10px 0;
+  color: white;
+  text-decoration: none;
+}
+
+a.fa-4x:hover {
+  color: black;
+}
+
+.project-description {
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 30px;
 }
