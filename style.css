@@ -130,6 +130,10 @@ a.fa-4x:hover {
     font-size: 20px;
   }
 
+  nav ul li a {
+    margin: 0 3px;
+  }
+
   h1 {
     font-size: 20px;
   }
@@ -162,5 +166,9 @@ a.fa-4x:hover {
 
   body {
     margin-top: 4.8rem;
+  }
+
+  .header-icon {
+    display: none;
   }
 }
