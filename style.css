@@ -1,14 +1,11 @@
 h1 {
-  text-transform: lowercase;
   font-size: 2rem;
 }
 
 nav {
-  background-color: #272727;
-  border-bottom: 10px double white;
   position: fixed;
-  right: 1rem;
-  left: 1rem;
+  right: 0;
+  left: 0;
   top: 0;
   padding: 0.6rem 0;
 }
@@ -30,26 +27,36 @@ nav ul li a:hover {
 }
 
 body {
-  background-color: #272727;
+  background-color: black;
   color: white;
-  margin: 90px 0 0;
-  font-family: "garamond", serif;
+  margin: 60px 0 0;
+  font-family: Roboto, sans-serif;
 }
 
 section {
   display: flex;
   text-align: center;
-  margin: 20px;
-  scroll-margin-top: 90px;
+  padding: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 0px;
+}
+
+section:nth-child(odd) {
+  background-color: black;
+  color: white;
+}
+
+section:nth-child(even) {
+  background-color: white;
+  color: black;
 }
 
 section h1 {
   border-bottom: 10px solid lightcoral;
   width: fit-content;
-  margin: 0 0 10px;
+  margin: 30px 0 10px;
 }
 
 ul {
@@ -69,6 +76,11 @@ nav ul li {
 h2 {
   font-size: 25px;
   margin: 10px 0;
+}
+
+#about h2 {
+  margin: 30px 0;
+  font-size: 3rem;
 }
 
 .card {
@@ -94,6 +106,8 @@ img {
   background-color: white;
   color: lightcoral;
   padding: 7px;
+  border-bottom: 3px solid lightcoral;
+  border-right: 3px solid lightcoral;
 }
 
 .footer {
@@ -166,9 +180,5 @@ a.fa-4x:hover {
 
   body {
     margin-top: 4.8rem;
-  }
-
-  .header-icon {
-    display: none;
   }
 }
