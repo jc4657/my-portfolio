@@ -32,7 +32,31 @@ window.addEventListener("scroll", changeNavbarColor);
 const changeNavbarHover = (button) => {
     button.style.color = "lightcoral";
 }
+
 buttons.forEach(button => {
-    button.addEventListener("mouseover", function(){ changeNavbarHover(button); } );
+    button.addEventListener("mouseover", () => {changeNavbarHover(button);});
     button.addEventListener("mouseout", changeNavbarColor);
 });
+
+const hamenu = document.querySelector("nav");
+let isHamenuOpen = false;
+const openHamenu = () => {
+    const sections = ["contact", "project", "about"];
+    let i = 0;
+    buttons.forEach(button => {
+        button.innerHTML = `${sections[i]}`;
+        button.href = `#${sections[i]}`;
+        button.style.padding = "0 0.6rem";
+        button.style.border = "0.2rem solid";
+        i += 1;
+    });
+    isHamenuOpen = true;
+}
+
+hamenu.addEventListener("click", (e) => {
+    if (!isHamenuOpen) {
+        e.preventDefault();
+        openHamenu();
+    }
+});
+hamenu.addEventListener("mouseover", () => {hamenu.style.cursor = "pointer";});
