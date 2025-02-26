@@ -58,8 +58,8 @@
             &copy;2025 Jason Chen. All rights reserved.
         </div>
         <script>
+            const buttons = document.querySelectorAll("nav ul li a");
             const changeNavbarColor = () => {
-                const buttons = document.querySelectorAll("nav ul li a");
                 const sections = document.querySelectorAll("section");
 
                 if (window.scrollY === 0) {
@@ -88,6 +88,14 @@
 
             window.addEventListener("load", changeNavbarColor);
             window.addEventListener("scroll", changeNavbarColor);
+
+            const changeNavbarHover = (button) => {
+                button.style.color = "lightcoral";
+            }
+            buttons.forEach(button => {
+                button.addEventListener("mouseover", function(){ changeNavbarHover(button); } );
+                button.addEventListener("mouseout", changeNavbarColor);
+            });
         </script>
     </body>
 </html>
