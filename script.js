@@ -38,9 +38,11 @@ buttons.forEach(button => {
     button.addEventListener("mouseout", changeNavbarColor);
 });
 
-const hamenu = document.querySelector("nav");
+const hamenu = document.querySelector(".hamenu");
 let isHamenuOpen = false;
+
 const openHamenu = () => {
+    hamenu.setAttribute("src", "img/hamenuOpen.png");
     const sections = ["contact", "project", "about"];
     let i = 0;
     buttons.forEach(button => {
@@ -48,15 +50,29 @@ const openHamenu = () => {
         button.href = `#${sections[i]}`;
         button.style.padding = "0 0.6rem";
         button.style.border = "0.2rem solid";
+        button.style.borderLeft = "0.6rem solid lightcoral";
         i += 1;
     });
     isHamenuOpen = true;
 }
 
-hamenu.addEventListener("click", (e) => {
+const closeHamenu = () => {
+    hamenu.setAttribute("src", "img/hamenuClosed.png");
+    buttons.forEach(button => {
+        button.innerHTML = "";
+        button.href = "";
+        button.style.padding = "";
+        button.style.border = "";
+        button.style.borderLeft = "";
+    });
+    isHamenuOpen = false;
+}
+
+hamenu.addEventListener("click", () => {
     if (!isHamenuOpen) {
-        e.preventDefault();
         openHamenu();
+    } else {
+        closeHamenu();
     }
 });
 hamenu.addEventListener("mouseover", () => {hamenu.style.cursor = "pointer";});

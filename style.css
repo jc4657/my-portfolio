@@ -4,18 +4,34 @@ h1 {
 
 nav {
   position: fixed;
-  right: 10px;
+  right: 3px;
   top: 0;
-  padding: 0.6rem 0;
+}
+
+nav ul li{
+  display: inline;
+  font-size: 30px;
+  color: lightcoral;
+  font-weight: bold;
+  float: right;
+  padding: 0.7rem 0;
+}
+
+.hamenu {
+  float: right;
+  padding: 0.25rem 0;
+}
+
+nav ul li h1 {
+  font-size: 30px;
+  margin: 0 7px;
 }
 
 nav ul li a {
   text-decoration: none;
   width: auto;
-  border-left: 0.6rem solid lightcoral;
+  /* border-left: 0.6rem solid lightcoral; */
   margin: 0 3px;
-  text-transform: lowercase;
-  float: right;
 }
 
 body {
@@ -57,14 +73,6 @@ ul {
   padding: 0;
 }
 
-nav ul li {
-  display: inline;
-  font-size: 30px;
-  color: lightcoral;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 h2 {
   font-size: 25px;
   margin: 10px 0;
@@ -85,6 +93,9 @@ h2 {
 img {
   max-width: 90%;
   height: auto;
+}
+
+#project img {
   border: 10px solid white;
 }
 
@@ -132,10 +143,6 @@ a.fa-4x:hover {
 }
 
 @media (max-width: 508px) {
-  nav ul li {
-    font-size: 20px;
-  }
-
   nav ul li a {
     margin: 0 3px;
   }
