@@ -10,7 +10,7 @@ nav {
 
 nav ul li{
   display: inline;
-  font-size: 30px;
+  font-size: 1.75rem;
   color: lightcoral;
   font-weight: bold;
   float: right;
@@ -30,7 +30,6 @@ nav ul li h1 {
 nav ul li a {
   text-decoration: none;
   width: auto;
-  /* border-left: 0.6rem solid lightcoral; */
   margin: 0 3px;
 }
 
@@ -97,6 +96,7 @@ img {
 
 #project img {
   border: 10px solid white;
+  margin-bottom: 10px;
 }
 
 .tag {
@@ -111,6 +111,7 @@ img {
   padding: 7px;
   border-bottom: 3px solid lightcoral;
   border-right: 3px solid lightcoral;
+  margin-top: 10px;
 }
 
 .footer {
@@ -180,4 +181,12 @@ a.fa-4x:hover {
   body {
     margin-top: 4.8rem;
   }
+}
+
+.srcLink {
+  font-size: 1.17em;
+  text-decoration: none;
+  color: white;
+  border: white solid 3px;
+  padding: 5px;
 }
