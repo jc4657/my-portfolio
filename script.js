@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll("nav ul li a");
+const buttons = document.querySelectorAll(".button");
 const changeNavbarColor = () => {
     const sections = document.querySelectorAll("section");
 
@@ -38,41 +38,15 @@ buttons.forEach(button => {
     button.addEventListener("mouseout", changeNavbarColor);
 });
 
-const hamenu = document.querySelector(".hamenu");
-let isHamenuOpen = false;
+let hamenuOpen = false;
 
-const openHamenu = () => {
-    hamenu.setAttribute("src", "img/hamenuOpen.png");
-    const sections = ["contact", "project", "about"];
-    let i = 0;
-    buttons.forEach(button => {
-        button.innerHTML = `${sections[i]}`;
-        button.href = `#${sections[i]}`;
-        button.style.padding = "0 0.6rem";
-        button.style.border = "0.2rem solid";
-        button.style.borderLeft = "0.6rem solid lightcoral";
-        i += 1;
+const toggleHamenu = () => {
+    hamenuOpen = !hamenuOpen;
+
+    anime({
+        targets: ".buttons",
+        translateX: hamenuOpen ? -410 : 410,
+        duration: 500,
+        easing: "spring(1, 80, 10, 5)"
     });
-    isHamenuOpen = true;
 }
-
-const closeHamenu = () => {
-    hamenu.setAttribute("src", "img/hamenuClosed.png");
-    buttons.forEach(button => {
-        button.innerHTML = "";
-        button.href = "";
-        button.style.padding = "";
-        button.style.border = "";
-        button.style.borderLeft = "";
-    });
-    isHamenuOpen = false;
-}
-
-hamenu.addEventListener("click", () => {
-    if (!isHamenuOpen) {
-        openHamenu();
-    } else {
-        closeHamenu();
-    }
-});
-hamenu.addEventListener("mouseover", () => {hamenu.style.cursor = "pointer";});
