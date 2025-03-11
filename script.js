@@ -49,4 +49,27 @@ const toggleHamenu = () => {
         duration: 500,
         easing: "spring(1, 80, 10, 5)"
     });
+
+    anime({
+        targets: ".bar",
+        rotate: hamenuOpen ? 30 : 0,
+        duration: 100,
+        scaleX: hamenuOpen ? 0.5 : 1,
+        translateX: hamenuOpen ? 18 : 0,
+        translateY: hamenuOpen ? 3 : 0,
+    });
+
+    anime({
+        targets: ".bar:nth-child(2)",
+        rotate: 0,
+    });
+
+    anime({
+        targets: ".bar:nth-child(3)",
+        rotate: hamenuOpen ? -30 : 0,
+        duration: 100,
+        scaleX: hamenuOpen ? 0.5 : 1,
+        translateX: hamenuOpen ? 18 : 0,
+        translateY: hamenuOpen ? -3 : 0,
+    });
 }
